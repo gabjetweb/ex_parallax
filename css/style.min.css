@@ -162,7 +162,7 @@ html {
 .content {
   position: relative;
   background-color: #0f1629;
-  min-height: 500px;
+  min-height: 2000px;
   width: 100%;
   font-family: "Arial";
   line-height: 40px;
@@ -212,8 +212,6 @@ a:hover {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-perspective: 1px;
-  -ms-perspective: 1px;
   perspective: 1px;
 }
 
@@ -221,9 +219,6 @@ a:hover {
   position: relative;
   height: 100vh;
   overflow-scrolling: touch;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
@@ -246,8 +241,6 @@ a:hover {
 }
 
 .parallax__layer--rocks {
-  -webkit-transform: translateZ(-1px) scale(2);
-  -ms-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   background-image: url("../img/mounts_1.png");
   margin-top: 78%;
@@ -256,8 +249,6 @@ a:hover {
 
 .parallax__layer--river {
   position: fixed;
-  -webkit-transform: translateZ(-2px) scale(3);
-  -ms-transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
   background-image: url("../img/img_1.svg");
   margin-top: 95%;
@@ -266,8 +257,6 @@ a:hover {
 
 .parallax__layer--back {
   position: fixed;
-  -webkit-transform: translateZ(-3px) scale(4);
-  -ms-transform: translateZ(-3px) scale(4);
   transform: translateZ(-3px) scale(4);
   background-image: url("../img/img_2.svg");
   margin-top: 130%;
@@ -276,8 +265,6 @@ a:hover {
 
 .parallax__layer--deep {
   position: fixed;
-  -webkit-transform: translateZ(-4px) scale(5);
-  -ms-transform: translateZ(-4px) scale(5);
   transform: translateZ(-4px) scale(5);
   background-image: url("../img/img_3.svg");
   margin-top: 145%;
@@ -286,8 +273,6 @@ a:hover {
 
 .parallax__layer--drone-a {
   position: fixed;
-  -webkit-transform: translateZ(0) scale(1);
-  -ms-transform: translateZ(0) scale(1);
   transform: translateZ(0) scale(1);
   background-image: url("../img/deco_1.svg");
   width: 38vw;
@@ -297,8 +282,6 @@ a:hover {
 
 .parallax__layer--drone-b {
   position: fixed;
-  -webkit-transform: translateZ(-3px) scale(4);
-  -ms-transform: translateZ(-3px) scale(4);
   transform: translateZ(-3px) scale(4);
   background-image: url("../img/deco_2.svg");
   margin: auto;
@@ -311,8 +294,6 @@ a:hover {
 
 .parallax__layer--logo {
   position: fixed;
-  -webkit-transform: translateZ(-3px) scale(4);
-  -ms-transform: translateZ(-3px) scale(4);
   transform: translateZ(-3px) scale(4);
   background-image: url("../img/logo.svg");
   right: 0px;
@@ -331,8 +312,6 @@ a:hover {
 
 .parallax__layer--bg {
   position: fixed;
-  -webkit-transform: translateZ(-5px) scale(6);
-  -ms-transform: translateZ(-5px) scale(6);
   transform: translateZ(-5px) scale(6);
   background-image: url("../img/bg.svg");
   background-size: 100%;
@@ -427,5 +406,8 @@ h1 {
     /* For mobile phones: */
     .row {
         flex-direction:column;
+    }
+    .content{
+      min-height: 3000px;
     }
 }
